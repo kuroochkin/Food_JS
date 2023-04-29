@@ -212,10 +212,10 @@ window.addEventListener('DOMContentLoaded', () => {
         form.addEventListener('submit', (e) => {
             e.preventDefault();
 
-            const statusMessage = document.createElement('div');
+            let statusMessage = document.createElement('div');
             statusMessage.classList.add('status');
             statusMessage.textContent = message.loading;
-            form.append(statusMessage);
+            form.appendChild(statusMessage);
 
             const request = new XMLHttpRequest();
             request.open('POST', 'server.php');
@@ -231,8 +231,6 @@ window.addEventListener('DOMContentLoaded', () => {
             const json = JSON.stringify(object);
 
             request.send(json);
-
-            request.send(formData);
 
             request.addEventListener('load', () => {
                 if(request.status === 200){

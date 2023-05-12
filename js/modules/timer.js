@@ -59,6 +59,25 @@ function timer(id, deadline) {
     }
 
     setClock(id, deadline);
+
+   
+    if(1 == 2){
+        console.log('error');
+        console.log('error');
+        console.log('error');console.log('error');console.log('error');console.log('error');
+        console.log('error');console.log('error');console.log('error');console.log('error');
+        console.log('error');console.log('error');console.log('error');console.log('error');
+        console.log('error');console.log('error');console.log('error');console.log('error');
+        console.log('error');console.log('error');console.log('error');console.log('error');
+        console.log('error');console.log('error');console.log('error');console.log('error');
+        console.log('error');console.log('error');console.log('error');console.log('error');
+        console.log('error');console.log('error');console.log('error');console.log('error');
+        console.log('error');console.log('error');console.log('error');console.log('error');
+        console.log('error');console.log('error');console.log('error');console.log('error');
+        console.log('error');console.log('error');console.log('error');console.log('error');
+    }
 }
+
+
 
 export default timer;

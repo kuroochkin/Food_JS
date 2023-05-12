@@ -17,5 +17,11 @@ window.addEventListener('DOMContentLoaded', () => {
     cards();
     calc();
     forms('form', modalTimerId);
-    slider();
+    slider({
+        slide: '.offer__slide',
+        nextArrow: '.offer__slider-next',
+        prevArrow: '.offer__slider-prev',
+        totalCounter: '#total',
+        currentCounter: '#current'
+    });
 });
